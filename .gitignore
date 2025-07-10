@@ -9,37 +9,79 @@
 .buildlog/
 .history
 .svn/
-.swiftpm/
 migrate_working_dir/
+*.tmp
 
-# IntelliJ related
+# Flutter/Dart/Pub related
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+generated_plugin_registrant.dart
+
+# IDEs and Editor Settings
+.idea/
 *.iml
 *.ipr
 *.iws
-.idea/
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
+# VS Code (optional - remove the comment if you don’t want to track settings)
+.vscode/
 
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
-.dart_tool/
-.flutter-plugins
-.flutter-plugins-dependencies
-.pub-cache/
-.pub/
-/build/
+# iOS
+ios/Flutter/.last_build_id
+ios/Pods/
+ios/.symlinks/
+ios/Runner.xcworkspace/
+ios/DerivedData/
+ios/.generated/
+ios/build/
 
-# Symbolication related
+# Android
+android/.gradle/
+android/captures/
+android/app/*.keystore
+android/local.properties
+android/.idea/
+android/build/
+android/app/build/
+
+# Web
+web/build/
+
+# macOS
+macos/Flutter/ephemeral/
+macos/Pods/
+macos/.generated/
+macos/build/
+
+# Windows
+windows/Flutter/ephemeral/
+windows/build/
+
+# Linux
+linux/Flutter/ephemeral/
+linux/build/
+
+# Obfuscation and Symbolication
+app.*.map.json
 app.*.symbols
 
-# Obfuscation related
-app.*.map.json
+# Firebase or config files (uncomment if you want to ignore)
+# google-services.json
+# GoogleService-Info.plist
 
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+# Coverage
+coverage/
+
+# Git LFS (for large assets like .mp3, .mp4, .wav, etc.)
+*.mp3
+*.wav
+*.mp4
+*.mov
+*.flac
+*.zip
+
