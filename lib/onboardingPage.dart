@@ -55,22 +55,6 @@ class OnboardingPage extends StatelessWidget {
                   color: Color(0xffE2BE7F),
                   fontSize: 20),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: List.generate(totalPages, (index) {
-                bool isActive = index == currentIndex;
-                return AnimatedContainer(
-                  duration: const Duration(milliseconds: 300),
-                  margin: const EdgeInsets.symmetric(horizontal: 4.0),
-                  height: 8.0,
-                  width: isActive ? 20.0 : 8.0,
-                  decoration: BoxDecoration(
-                    color: isActive ? const Color(0xffE2BE7F) : Colors.grey,
-                    borderRadius: BorderRadius.circular(10.0),
-                  ),
-                );
-              }),
-            ),
             Padding(
               padding: const EdgeInsets.only(bottom: 20),
               child: Row(
@@ -89,7 +73,22 @@ class OnboardingPage extends StatelessWidget {
                       ),
                     ),
                   ),
-
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: List.generate(totalPages, (index) {
+                      bool isActive = index == currentIndex;
+                      return AnimatedContainer(
+                        duration: const Duration(milliseconds: 300),
+                        margin: const EdgeInsets.symmetric(horizontal: 4.0),
+                        height: 8.0,
+                        width: isActive ? 20.0 : 8.0,
+                        decoration: BoxDecoration(
+                          color: isActive ? const Color(0xffE2BE7F) : Colors.grey,
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
+                      );
+                    }),
+                  ),
                   // Next / Finish button
                   TextButton(
                     onPressed: onNext,
