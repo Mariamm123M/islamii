@@ -45,8 +45,8 @@ class _SebhaScreenState extends State<SebhaScreen> {
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
                 colors: [
-                  Colors.black.withOpacity(0.5),
-                  Colors.black.withOpacity(0.9),
+                  Color(0xff202020).withOpacity(0.4),
+                  Colors.black.withOpacity(1),
                 ],
               ),
             ),
